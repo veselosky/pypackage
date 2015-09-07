@@ -1,0 +1,12 @@
+bumpversion
+check-manifest
+coverage
+flake8
+ipython
+mock
+pep8
+pyflakes
+pytest
+sphinx
+tox
+twine
