@@ -33,17 +33,14 @@ if sys.argv[-1] == 'info':
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('CHANGELOG.rst') as history_file:
-    history = history_file.read().replace('.. :changelog:', '')
-
 setup(
-    name=about['__title__'],
+    name=about['__name__'],
     version=about['__version__'],
     description=about['__description__'],
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     author=about['__author__'],
-    author_email=about['__email__'],
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',  # noqa
+    author_email=about['__author_email__'],
+    url=about['__url__'],
     packages=[
         '{{ cookiecutter.repo_name }}',
     ],
