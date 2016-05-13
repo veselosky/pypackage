@@ -2,10 +2,12 @@
 	"full_name": "Vince Veselosky",
 	"email": "vince@veselosky.com",
 	"github_username": "veselosky",
+    "pypi_username": "{{ cookiecutter.github_username }}",
 	"project_name": "Python Boilerplate",
+	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
 	"repo_name": "boilerplate",
-	"project_short_description": "Python Boilerplate.",
-	"release_date": "2015-01-11",
-	"year": "2015",
+	"project_short_description": "FIXME",
+	"release_date": "2016-01-11",
+	"year": "2016",
 	"version": "0.1.0"
 }
